@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+
+  <script defer src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script defer src="../assets/js/swiper-bundle.min.js"></script>
+  <script defer src="../assets/js/bootstrap.min.js"></script>
+  <script defer src="../assets/js/style.js"></script>
+
+  <title>유진투자증권</title>
+</head>
+
+<body>
+  <header class="d-flex justify-content-center position-relative mo border-bottom">
+    <a href="javascript:void(0)" class="position-absolute start-0 top-50 translate-middle-y prev" title="뒤로가기"></a>
+    <h1>화상상담 신청</h1>
+  </header>
+  <div class="wrap mobile">
+    <main>
+      <div class="mo-inner mt-2_5">
+        <!-- 관심서비스 -->
+        <div class="interest mo">
+          <h4 class="interest-title mo-title">관심서비스 <span>(중복선택 가능)</span></h4>
+          <ul class="interest-list d-flex mt-2">
+            <li class="interest-item input-checkbox">
+              <input type="checkbox" id="interest-chk-01" data-chk="true">
+              <label for="interest-chk-01">금융상품</label>
+            </li>
+            <li class="interest-item input-checkbox">
+              <input type="checkbox" id="interest-chk-02">
+              <label for="interest-chk-02">주식상담</label>
+            </li>
+            <li class="interest-item input-checkbox disalbe">
+              <input type="checkbox" id="interest-chk-03">
+              <label for="interest-chk-03">비대면 <br>업무</label>
+            </li>
+            <li class="interest-item input-checkbox disalbe">
+              <input type="checkbox" id="interest-chk-04">
+              <label for="interest-chk-04">계좌개설</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 세부상담내역 -->
+        <div class="detailed mo mt-2_5">
+          <h4 class="detailed-title mo-title">세부상담내역</h4>
+          <p class="detailed-dec mo-dec mt-1">관심상품을 선택 하신 후 해당하는 세부상담 내역을 선택하세요.</p>
+          <ul class="detailed-list flex-wrap mt-1">
+            <li class="detailed-item input-checkbox">
+              <input type="checkbox" id="detailed-chk-01">
+              <label for="detailed-chk-01">펀드</label>
+            </li>
+            <li class="detailed-item input-checkbox">
+              <input type="checkbox" id="detailed-chk-02">
+              <label for="detailed-chk-02">ELS/DLS</label>
+            </li>
+            <li class="detailed-item input-checkbox">
+              <input type="checkbox" id="detailed-chk-03">
+              <label for="detailed-chk-03">랩</label>
+            </li>
+            <li class="detailed-item input-checkbox">
+              <input type="checkbox" id="detailed-chk-04">
+              <label for="detailed-chk-04">신탁</label>
+            </li>
+            <li class="detailed-item input-checkbox">
+              <input type="checkbox" id="detailed-chk-05">
+              <label for="detailed-chk-05">장외채권</label>
+            </li>
+            <li class="detailed-item input-checkbox">
+              <input type="checkbox" id="detailed-chk-06">
+              <label for="detailed-chk-06">CP</label>
+            </li>
+            <li class="detailed-item input-checkbox">
+              <input type="checkbox" id="detailed-chk-07">
+              <label for="detailed-chk-07">전기단기사채</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 추가문의사항 -->
+        <div class="additional mo mt-2_5">
+          <h4 class="additional-title mo-title">추가 문의 사항</h4>
+          <div class="additional-textarea mt-1">
+            <textarea class="form-control mo" placeholder="60자 내외 입력" style="height: 46.5px"></textarea>
+          </div>
+          <p class="additional-dec mo-dec">※ 추가 문의사항이 있으신가요? <br>60자 내외로 간략하게 기재해 주세요. (띄어쓰기 포함)</p>
+        </div>
+        <div class="counselor mt-2">
+          <a href="javascript:void(0)" class="counselor-link"  data-bs-toggle="modal" data-bs-target="#applicationCom-01" >
+            <p class="mb-1">상담원을 선택하세요.</p>
+            <svg id="Stock_cut" class="profileSvg" width="16" height="16" viewBox="0 0 32 32" title="상담원선택아이콘">
+              <g>
+                <circle class="st0" cx="16" cy="16" r="15.1" />
+                <path class="st0" d="M26.1,27.7L26.1,27.7c0-5.3-4.5-9.7-10.1-9.7l0,0c-5.6,0-10.1,4.3-10.1,9.7l0,0" />
+                <circle class="st0" cx="16" cy="12.2" r="5.7" />
+              </g>
+            </svg>
+          </a>
+          <button class="counselor-btn btn btn-border-black mt-1">자동배정</button>
+        </div>
+      </div>
+      <button class="counselRequest-btn btn btn-red">상담신청</button>
+    </main>
+  </div>
+
+
+  <!-- 모달  -->
+  <!-- 관심서비스 미입력시 노출 -->
+  <div class="modal fade defalt" id="applicationCom-01">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          관심서비스를 먼저 선택하세요.
+        </div>
+        <button type="button" class="btn modal-btn" data-bs-dismiss="modal">확인</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

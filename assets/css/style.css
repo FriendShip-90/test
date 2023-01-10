@@ -1,0 +1,183 @@
+.disable{ pointer-events: none; opacity: 0.5;}
+.badge-new{ position: absolute; left: -0.4rem; top: 0; display: flex; justify-content: center; align-items: center; padding: 0.4rem 0.6rem; width: 100%; max-width: 2.3rem; max-height: 2.3rem; background: #ff2a00; font-size: 1.5rem; color: #fff; font-weight: bold; font-family: auto; border-radius: 100%;}
+
+.header { position: fixed; left: 0; right: 0; background: #fff;  height: 6rem;}
+.header .inner{ align-items: center; justify-content: space-between; height: 100%; border: 1px solid #e0e0e0;}
+.header-logo{ align-items: flex-end;}
+.header-logo P{ margin-left: 3rem; font-size: 2.6rem; font-weight: bold; line-height: 1;}
+.header-link{ width: 100%; height: 3.8rem; overflow: hidden;}
+.header-link img{ width: 100%; height: 100%; object-fit: cover; filter: pink;}
+
+.header-util{ align-items: flex-end;}
+.header-util-btn{ padding: 0.8rem 2.4rem; border: 1px solid #dbdbdb; border-radius: 0.6rem; font-size: 1.6rem; font-weight: bold;}
+.header-util-list{ align-items: center;}
+.header-util-item{ position: relative; margin-left: 3rem;}
+.header-util-link{ display: inline-block; width: 3.2rem; height: 3.2rem;}
+.header-util-link img{ width: 100%; height: 100%; object-fit: cover;}
+
+.dashboard{ justify-content: space-between; padding: 3rem; margin-top: 6rem; height: calc( 100vh - 6rem); background-color: #f0f0f0;}
+.dashboard-left{ flex-shrink: 0; width: 50rem; height: 100%; overflow: hidden;}
+.dashboard-left > div{ padding: 3rem; background-color: #fff; border-radius: 0.5rem;}
+.dashboard-leftTop figure{ margin: 0 auto; width: 23rem; border: 1px solid #d7d7d7; box-shadow: 0.8rem 0.8rem 1rem rgba(0,0,0,0.1);}
+.dashboard-leftTop figure img{ width: 100%; height: 100%; object-fit: cover;}
+.dashboard-leftTop-name { flex-wrap: wrap;align-items: center;justify-content: center; margin-top: 2.5rem;}
+.dashboard-leftTop-name h3{ margin-left: 2rem; font-size: 2.4rem; line-height: 2.9rem; font-weight: bold;}
+.dashboard-leftTop-name h3 span{ display: inline-block; font-size: 2.4rem; line-height: 2.9rem; font-weight: bold; }
+.dashboard-leftTop-name p{ margin-left: 2rem; font-size: 2rem; line-height: 2.9rem; }
+.dashboard-leftTop-data{ margin-top: 2.5rem;}
+.dashboard-leftTop-data dl{ display: flex; align-items: center; border: 1px solid #e6e6e6;}
+.dashboard-leftTop-data dl ~ dl{ border-top: none;}
+.dashboard-leftTop-data dt{ padding: 0 3rem; width: 100%; max-width: 19rem; background: #fafafa; font-size: 1.6rem; line-height: 3.85rem; text-align: right; border-right: 1px solid #e6e6e6;}
+.dashboard-leftTop-data dd{ padding: 0 3rem; font-size: 1.6rem;}
+.dashboard-leftTop-data .active dt p{ font-size: 1.9rem; font-weight: bold;}
+.dashboard-leftTop-data .active dd p{ font-size: 2.2rem; color: #e93d50; font-weight: bold;}
+.dashboard-leftTop-name .st5 { fill: none; stroke: #f37274; stroke-width: 3;}
+
+.dashboard-leftBottom{ margin-top: 3rem; height: 100%; max-height: 36rem; text-align: center;}
+.dashboard-leftBottom-tit{position: relative; justify-content: center; }
+.dashboard-leftBottom-tit h3{ font-size: 2.4rem; line-height: 1; font-weight: bold;}
+.dashboard-leftBottom-more{ position: absolute; right: 0; bottom: 50%; transform: translateY(50%); font-size: 1.4rem; font-weight: bold; color: #f37274;}
+.dashboard-leftBottom-list{ margin-top: 2rem; }
+.dashboard-leftBottom-item{ border-top: 1px solid #e6e6e6;}
+.dashboard-leftBottom-item:last-child{ border-bottom: 1px solid #e6e6e6;}
+.dashboard-leftBottom-link{ display: flex; align-items: center; padding: 0.6rem 0; font-size: 1.6rem;}
+.dashboard-leftBottom-link .new{  margin-right: 1.6rem; width: 5rem; }
+.dashboard-leftBottom-link .new img {display: none;}
+.dashboard-leftBottom-link .new.on img{ display: block; }
+.dashboard-leftBottom-link .date{ font-size: 1.5rem; color: #666;}
+.dashboard-leftBottom-link .txt{ margin-left: 2.3rem; width: 100%; max-width: 26.7rem; line-height: 2.6rem; text-align: left;}
+
+
+.dashboard-right{ margin-left: 3rem; width: 100%;}
+/* 실시간 상담현황 */
+.consul ~ .consul{ margin-top: 2.7rem;}
+.consul-title{ margin-bottom: 1rem; font-size: 2.4rem; font-weight: bold; line-height: 1; }
+.consul-list { padding: 0 3rem; background: #fff;  font-size: 1.8rem; border: 1px solid #dbdbdb; border-radius: 0.6rem; overflow: hidden; }
+.consul-item{ align-items: center; padding: 1.5rem 0;}
+.consul-item > * { flex-shrink: 0;}
+.consul-item ~ .consul-item{ border-top: 1px solid #dbdbdb;}
+.consul-profile{ align-items: center;  width: 100%; max-width: 14rem; font-weight: bold;}
+.consul-profile .empty{ margin: 0 0.8rem; }
+.consul-profile svg{margin-right: 1.3rem; width: 3.2rem; height: 3.2rem;}
+
+.consul-time{ width: 100%; max-width: 13.4rem;}
+.consul-time.red{ padding-left: 2.5rem; font-weight: bold;}
+.consul-tit{ padding-right: 3raem; width: 100%; max-width: 43.8rem;}
+.consul-tit span{ margin-right: 1.8rem; color: #157ee8; font-weight: bold;}
+.consul-account{ width: 100%; max-width: 16rem; text-align: center;}
+.consul-btnWrap{ padding-left: 3rem; font-size: 0;}
+.consul-begin{ margin-right: 2rem; width: 14rem;}
+.consul-begin a{ width: 100%;}
+.consul .btn{ font-size: 1.6rem; font-weight: bold; line-height: 1; border-radius: 0.6rem; }
+.consul .state{ padding: 0.8rem 1.5rem; margin-right: 3rem; width: 9.5rem; text-align: center; }
+.consul .state:hover{ cursor: unset;}
+.consul .btn-open{ padding: 1rem 2.5rem;}
+.consul .btn-cancel{ padding: 1rem 2.4rem; width: 8rem;}
+
+
+/* 화상상담시스템 */
+.videoConsult{ padding: 3rem; margin-top: 6rem; background-color: #f0f0f0;}
+.videoConsult-title{ font-size: 2.4rem; line-height: 1; font-weight: bold; text-align: center;}
+.videoConsult-wrap { justify-content: space-between; overflow: hidden; }
+.videoConsult-wrap > div{ padding: 4rem; padding-bottom: 3rem; width: calc(50% - 1.5rem); background-color: #fff; border: 1px solid #dbdbdb; border-radius: 0.6rem;}
+
+.selectCustomer-top{ align-items: center;}
+.selectCustomer-top h4{ padding: 1.75rem 4rem; margin-right: 5rem; width: 100%; max-width: 29rem; background: #f5f5f5; line-height: 1;}
+.selectCustomer-radioWrap p { font-size: 1.8rem; font-weight: bold;}
+.selectCustomer-radioWrap input:checked + label p{ color: #e93d50; }
+.selectCustomer-radioWrap input:checked + label svg path{ fill: #e93d50;}
+
+.videoConsult-list{ height: 100%; max-height: 55rem; border: 1px solid #e6e6e6; overflow-y: auto;}
+
+/* .videoConsult-list::-webkit-scrollbar{}
+.videoConsult-list::-webkit-scrollbar-thumb{}
+.videoConsult-list::-webkit-scrollbar-track{} */
+
+.videoConsult-item label{ position: relative; align-items: center; padding: 0.85rem 6rem; width: 100%; height: 100%; cursor: pointer; border-bottom: 1px solid #e6e6e6;}
+.videoConsult-item input:checked + label::after{content: ""; position: absolute; right: 6rem; top: 50%; transform: translateY(-50%); width: 2.4rem; height: 1.8rem; background: url(../images/ico_videoConsult_chk.png) no-repeat center / 100%;}
+.videoConsult-item label svg{ margin-right: 4rem; width: 3.2rem; height: 3.2rem; }
+.videoConsult-name{ margin-right: 4rem; font-size: 1.8rem; font-weight: bold; letter-spacing: 0;}
+.videoConsult-number{ font-size: 2rem; font-weight: 300; letter-spacing: 0;}
+
+.interest-title span{ display: inline-block; font-size: 2rem; color: #666; }
+.interest-list{ justify-content: space-between;}
+.interest-item{ width: calc( 25% - 2rem);}
+
+.input-checkbox.disalbe{ pointer-events: none; opacity: 0.5;}
+.input-checkbox label{ width: 100%; font-size: 2rem; line-height: 4.5rem; text-align: center; border: 1px solid #000; border-radius: 0.6rem; letter-spacing: 0; cursor: pointer; }
+.input-checkbox input:checked + label{ background: #000; color: #fff; }
+
+.detailed-list{ display: none; gap: 1rem; }
+.detailed-item{ width: calc( 25% - 0.9rem);}
+
+.additional-textarea .form-control{ padding: 1.2rem 1.4rem; font-size: 1.8rem; border: 2px solid #fdd8d8; border-radius: 0.6rem;}
+.additional-textarea .form-control::placeholder{ color: #b2b2b2;}
+.additional-textarea .form-control:focus{ box-shadow: unset;}
+.additional-dec{ margin-top: 1.5rem;}
+
+.counselingTime-list{ gap: 1rem;}
+.counselingTime-item{ width: calc( 25% - 0.9rem);}
+.counselingTime-btn{ display: block; margin: 0 auto; width: 100%; max-width: 32.5rem; }
+
+
+
+
+
+/* 모바일 고객 */
+.mobile * { letter-spacing: 0 !important;}
+.mobile .input-checkbox label { font-size: 0.8rem; height: 3.4rem; line-height: 1.2rem; display: flex; align-items: center; justify-content: center; }
+
+.mts{  padding-top: 7rem; background: url(../images/mts_bg-01.svg) no-repeat center bottom / 100%;}
+.mts-wrap{ position: relative; flex-direction: column; align-items: center; padding: 0 2.4rem; margin: 0 auto; width: calc(100% - 4.8rem); }
+.mts-logo{ margin: 0 auto; width: 62.9vw; max-width: 34rem;}
+.mts-logo img{ width: 100%}
+
+/* 공통 */
+.bottom-20{ bottom: 2rem;}
+
+.mo-title{ font-size: 1rem; }
+.mo-dec{ margin-top: 0.6rem; font-size: 0.8rem; line-height: 1.2rem; color: var(--color-point-1);}
+
+/* 상담신청버튼 */
+.counselRequest-btn{ display: block; margin: 1.5rem auto; width: 100%; max-width: 16.2rem; font-size: 1rem; font-weight: bold; line-height: 2.7rem; }
+
+/* //공통 */
+
+
+header.mo{ padding: 0 1.2rem; margin: 0 auto; width: 100%; max-width: 54rem; }
+header.mo h1{ font-size: 1.3rem; line-height: 3.5rem; letter-spacing: 0;}
+header.mo a{ display: inline-block; margin-left: 1rem; width: 1rem; height: 1.75rem; background: url(../images/ico_prev.png) no-repeat center / 100%;}
+header.mo button{ position: absolute; right: 1.2rem; top: 50%; transform: translateY(-50%); }
+header.mo button svg{ }
+
+.interest.mo .interest-title span{ font-size: 1rem;}
+.interest.mo .interest-list{ margin-top: 1rem !important;}
+.interest.mo .interest-item{ width: calc( 25% - 0.8rem);}
+.interest.mo .input-checkbox label{ font-size: 0.8rem; height: 3.4rem; line-height: 1.2rem; display: flex; align-items: center; justify-content: center; }
+
+.detailed.mo .detailed-list{ display: none;}
+.detailed.mo .input-checkbox label{ letter-spacing: -0.25rem;}
+
+.additional.mo .form-control{ padding: 0.6rem; font-size: 0.9rem; border: 1.9px solid #fdd8d8; border-radius: 0.6rem; }
+.additional.mo .additional-dec{ margin-left: 1.4rem; text-indent: -1.3rem;}
+
+.counselor-link { display: flex; align-items: center; justify-content: space-between; border-bottom:  1px solid #bebebe;}
+.counselor-link p { font-size: 1rem; color: #999;}
+.counselor-link .st0 { stroke: #000;}
+.counselor-btn { font-size: 0.9rem; height: 2.4rem; line-height: 1; width: 9.9rem; border-radius: 0.3rem; margin-top: 1.5rem !important; }
+
+.counselorSelect .accordion-item{ margin-bottom: 0.25rem; border: unset;}
+.counselorSelect .accordion-button{ background: #e6e6e6; color: #000;}
+.counselorSelect .accordion-button:focus{ box-shadow: unset;}
+.counselorSelect .accordion-body{ padding: 0;}
+.counselorSelect .accordion-button::after{ display: none;}
+.counselorSelect .accordion-button:not(.collapsed) { background: #808080; font-size: 1rem; font-weight: bold; color: #fff; box-shadow: unset; }
+.counselorSelect-list{ max-height: 18.6rem; overflow-y: auto; }
+.counselorSelect-item{ border-bottom: 1px solid #f3f3f3; }
+.counselorSelect-item input:checked + label:after {content: ""; position: absolute; right: 1.2rem; top: 50%; transform: translateY(-50%); width: 1.2rem; height: 0.9rem; background: url(../images/ico_videoConsult_chk.png) no-repeat center / 100%;}
+.counselorSelect-item input:checked + label svg .st0{ stroke: red;}
+.counselorSelect-item label{ position: relative; align-items: center; padding: 0.6rem 1.2rem ;}
+.counselorSelect-name { margin-left: 0.4rem; width: 100%; max-width: 4.4rem; font-size: 1rem; font-weight: bold;;}
+.counselorSelect-article { align-items: center; }
+.counselorSelect-article p{ margin-right: 0.7rem; padding: 0.3rem 1.1rem; font-size: 0.8rem; border-radius: 0.3rem; pointer-events: none;}
+.counselorSelect-article p:last-child{ margin-right: 0; }
